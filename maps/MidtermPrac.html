@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>NEIU Campus Map</title>
+        <link rel="stylesheet" href="leaflet.css" />
+        <script src="leaflet.js"></script>
+
+    </head>
+
+    <body>
+        <div id="map" style="height: 750px"></div>
+
+        <script type="text/javascript">
+          var map = L.map('map').setView([41.9802497,-87.7187372], 17);
+
+
+      var FA = L.marker([41.981174,-87.719243]).addTo(map);
+      var LWH = L.marker([41.982425,-87.718530]).addTo(map);
+		  var SU = L.marker([41.981352,-87.718557]).addTo(map);
+		  var BBH = L.marker([41.980421,-87.716985]).addTo(map);
+		  var BUILB = L.marker([41.98111,-87.717350]).addTo(map);
+      var BUILD = L.marker([41.981781,-87.717950]).addTo(map);
+      var CBM = L.marker([41.982379,-87.717435]).addTo(map);
+		  var PF = L.marker([41.980413,-87.720236]).addTo(map);
+		  var LIB = L.marker([41.98033,-87.71921]).addTo(map);
+      var PARKJ = L.marker([41.979447,-87.719334]).addTo(map);
+      var PARKL = L.marker([41.978087,-87.720337]).addTo(map);
+      var PARKF = L.marker([41.981202,-87.720224]).addTo(map);
+      var PARKE = L.marker([41.981736,-87.720557]).addTo(map);
+      var PARKD = L.marker([41.982446,-87.720364]).addTo(map);
+      var NEST = L.marker([41.979749,-87.719774]).addTo(map);
+
+      FA.bindPopup("Salme Harju Steinberg Fine Arts Center (FA) Arts Classes and Gallery");
+      LWH.bindPopup("Lech Walesa Hall (LWH) Education and Humanities Classes");
+			SU.bindPopup("Student Union (SU) Cafeteria, Bookstore, and Coffee Shop");
+			BBH.bindPopup("Bernard J. Brommel Hall (BBH) Main Location for GE&S Classes");
+			BUILB.bindPopup("Building B (B) Diversity and Intercultural Affairs, Honors Program");
+      BUILD.bindPopup("Building D (D) Enrollment Services, Financial Aid, Counseling");
+    	CBM.bindPopup("College of Buisness and Management (CBM)");
+			PF.bindPopup("Parking Facility (PF)");
+      LIB.bindPopup("Ronald Williams Library (LIB)");
+      PARKJ.bindPopup("Parking Lot J (Gold, Blue)");
+      PARKL.bindPopup("Parking Lot L (Gold, Blue, Green)");
+      PARKF.bindPopup("Parking Lot F (Gold, Blue)");
+      PARKE.bindPopup("Parking Lot E (Gold, Blue)");
+      PARKD.bindPopup("Parking Lot D (Gold, Blue)");
+      NEST.bindPopup("The Nest Student Housing");
+
+      L.tileLayer('http://tile.stamen.com/terrain/{z}/{x}/{y}.jpg', {
+                     attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.',
+                     maxZoom: 18
+                  }).addTo(map);
+
+        </script>
+   </body>
+</html>
